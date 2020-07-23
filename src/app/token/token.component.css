@@ -1,0 +1,9 @@
+.box{
+    background-color: rgb(255, 0, 0) ; 
+    width: 100px;
+    height: 100px;
+}
+.selected{
+    border-style: solid;
+    border-color: green;
+}

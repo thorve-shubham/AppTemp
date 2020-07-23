@@ -1,0 +1,25 @@
+<div class="container">
+    <br>
+    <div>
+        <button class="btn btn-success" (click)="addBox()">Add Box</button>&nbsp;
+        <button class="btn btn-primary" (click)="moveRight()">Move Right</button>&nbsp;
+        <button class="btn btn-primary" (click)="moveLeft()">Move Left</button>&nbsp;
+        <button class="btn btn-primary" (click)="moveUp()">Move Up</button>&nbsp;
+        <button class="btn btn-primary" (click)="moveDown()">Move Down</button>&nbsp;
+        <button class="btn btn-danger" (click)="deleteToken()">Delete</button>&nbsp;
+        
+    </div>
+    <br>
+    <div style="width: 800px; height: 800px; border-style: solid; border-color: black;overflow: hidden;">
+        <ng-template #playground></ng-template>
+    </div>
+    <div style="z-index: 1000;">
+        Controls :<br>
+        <button class="btn btn-success">N</button> - Add New&nbsp;
+        <button class="btn btn-dark">W</button> - Move Up&nbsp;
+        <button class="btn btn-dark">S</button> - Move Down&nbsp;
+        <button class="btn btn-dark">A</button> - Move Left&nbsp;
+        <button class="btn btn-dark">D</button> - Move Right&nbsp;
+        <button class="btn btn-danger">Delete</button> - Delete&nbsp;
+    </div>
+</div>
