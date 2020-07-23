@@ -11,7 +11,10 @@ import { HelperService } from '../helper.service';
     '(document:keydown)': 'handleKeyboardEvent($event)'
   }
 })
-export class PlaygroundComponent implements OnInit,AfterViewInit {
+export class PlaygroundComponent implements OnInit {
+
+  @ViewChild('playground',{ read: ViewContainerRef }) playground : ViewContainerRef;
+  public componentrefs = [];
 
   constructor(
     private renderer : Renderer2,
@@ -37,17 +40,11 @@ export class PlaygroundComponent implements OnInit,AfterViewInit {
     }
   }
 
-  @ViewChild('playground',{ read: ViewContainerRef }) playground : ViewContainerRef;
-  public componentrefs = [];
 
   ngOnInit(): void {
     
   }
-
-  ngAfterViewInit(){
-
-  }
-
+  
   addBox(){
     let factory = this.resolver.resolveComponentFactory(TokenComponent);
     let newComponentRef : ComponentRef<TokenComponent> = this.playground.createComponent(factory);

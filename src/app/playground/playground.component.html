@@ -1,6 +1,6 @@
 <div class="container">
     <br>
-    <div class="row">
+    <!-- <div class="row row-cols-1" style="z-index: 1000;">
         <div class="col col-md-12 col-sm-12">
             <button class="btn btn-success" (click)="addBox()">Add Box</button>&nbsp;
             <button class="btn btn-primary" (click)="moveRight()">Move Right</button>&nbsp;
@@ -9,37 +9,38 @@
             <button class="btn btn-primary" (click)="moveDown()">Move Down</button>&nbsp;
             <button class="btn btn-danger" (click)="deleteToken()">Delete</button>&nbsp;
         </div>
-    </div>
+    </div> -->
     <br>
     <div class="playground row row-cols-1" >
         <div class="col col-md-12 col-sm-12">
             <ng-template #playground></ng-template>
         </div>
     </div>
-    <div class="row" style="z-index: 1000;">
+    <br>
+    <div class="row" >
         <div class="col col-md-12 col-sm-12">
-            Controls :<br>
-            
+            Controls :  <button class="btn btn-success" (click)="addBox()">Add Box</button>&nbsp;  <br>
         </div>
     </div>
+    <br>
     <div class="row row-cols-4">
             <div class="col col-md-2 col-sm-2">
-                <button class="btn btn-success">N</button> - Add New&nbsp;
+                <button class="btn btn-success">N</button>  Add New&nbsp;
             </div>
             <div class="col col-md-2 col-sm-2">
-                <button class="btn btn-dark">W</button> - Move Up&nbsp;
+                <button class="btn btn-dark">W</button>  Move Up&nbsp;
             </div>
             <div class="col col-md-2 col-sm-2">
-                <button class="btn btn-dark">S</button> - Move Down&nbsp;
+                <button class="btn btn-dark">S</button>  Move Down&nbsp;
             </div>
             <div class="col col-md-2 col-sm-2">
-                <button class="btn btn-success">A</button> - Move Left&nbsp;
+                <button class="btn btn-success">A</button>  Move Left&nbsp;
             </div>
             <div class="col col-md-2 col-sm-2">
-                <button class="btn btn-dark">D</button> - Move Right&nbsp;
+                <button class="btn btn-dark">D</button>  Move Right&nbsp;
             </div>
             <div class="col col-md-2 col-sm-2">
-                <button class="btn btn-danger">Delete</button> - Delete&nbsp;  
+                <button class="btn btn-danger">Delete</button>  Delete&nbsp;  
             </div>   
     </div>
 </div>
